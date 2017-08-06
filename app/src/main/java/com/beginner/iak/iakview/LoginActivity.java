@@ -1,5 +1,6 @@
 package com.beginner.iak.iakview;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -24,20 +25,28 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(),
-                        "lOGIN BERHASIL " + editEmail.getText() + editPass.getText(),
-                        Toast.LENGTH_SHORT).show();
+                if ( editEmail.getText().toString().equals("bla@gmail.com")
+                        && editPass.getText().toString().equals("1234")){
+
+                    //pesan berhasil
+                    Toast.makeText(getApplicationContext(),
+                            "LOGIN BERHASIL",
+                            Toast.LENGTH_SHORT).show();
+
+                    Intent i = new Intent(LoginActivity.this, MainActivity.class);
+                    startActivity(i);
+
+                } else {
+                    //pesan gagal
+                    Toast.makeText(getApplicationContext(),
+                            "LOGIN GAGAL, CEK KEMBALI EMAIL DAN PASSWORD ANDA!" ,
+                            Toast.LENGTH_SHORT).show();
+                }
             }
         });
-
-
-
-
-
-
-
-
-
-
     }
+
+
+
 }
+

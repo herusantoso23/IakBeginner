@@ -1,83 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.beginner.iak.iakview.MainActivity">
 
-
-    <ImageView
+    <ListView
+        android:id="@+id/list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/gambar"
-        android:scaleType="centerCrop"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-
-        />
-
-    <!-- Membuat Image
-
-    <TextView
-        android:id="@+id/kunal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="kunal"
-        android:textStyle="bold|italic"
-        android:textSize="30sp"
-        android:background="#77543a"
-        android:gravity="center"
-        android:layout_margin="10dp"
-        />
-
-    <TextView
-        android:id="@+id/ben"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ben"
-        android:textStyle="bold|italic"
-        android:textSize="30sp"
-        android:background="#c16262"
-        android:gravity="center"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="10dp"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="kagure"
-        android:textSize="30sp"
-        android:background="#21b346"
-        android:layout_toRightOf="@id/ben"
-        android:layout_margin="10dp"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Kalimat1"
-        android:textStyle="bold|italic"
-        android:textSize="30sp"
-        android:background="#77543a"
-        android:gravity="center"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Kalimat2"
-        android:textSize="30sp"
-        android:background="@color/colorAccent"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        />
+        android:layout_height="match_parent">
+    </ListView>
 
 
--->
-
-</RelativeLayout>
+</LinearLayout>
